@@ -1,20 +1,35 @@
-/**
- * LinearSearch27
- */
+import java.util.Scanner;
 public class LinearSearch27 {
 
     public static void main(String[] args) {
+        Scanner input27 = new Scanner(System.in);
+
+        //input jumlah elemen
+        System.out.print(" Masukkan jumlah elemen array :");
+        int jmlElem = input27.nextInt();
         
-        int [] arrayInt = {34, 18, 26, 48, 72, 20, 56, 63};
-        int key = 20;
+        int [] arrayInt = new int[jmlElem];
         int hasil = 0;
 
-        for (int i = 0; i < arrayInt.length; i++) {
-            if (arrayInt[i] == key) {
-                hasil = i;
+        for (int i = 0; i < arrayInt.length; i++){
+            System.out.print("Masukkan elemen array ke-"+(i+1)+":");
+            arrayInt[i] = input27.nextInt();
+        }
+        System.out.print("Masukkan key yang ingin dicari :");
+        int key = input27.nextInt();
+
+        int indeks =-1;
+        for(int i = 0; i < arrayInt.length; i++){
+            if (arrayInt[i] == key){
+                indeks = i;
                 break;
             }
         }
-        System.out.println("Key ada dalam array pada posisi indeks ke-"+hasil);
+        if (indeks != -1){
+            System.out.print("key adadi posisi ke-"+(1+indeks));
+        }else {
+            System.out.print("key tidak ditemukan");
+        }
+
     }
 }
