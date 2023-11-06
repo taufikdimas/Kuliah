@@ -15,6 +15,14 @@ public class Quiz27 {
                 int answer = sc27.nextInt();
                 sc27.nextLine();
                 success = (answer == number);
+                if (answer < number) {
+                    System.out.println("lebih kecil dari jawaban ");
+                } else if (answer > number) {
+                    System.out.println("lebih besar dari jawaban ");
+                }else{
+                    System.out.println("anda benar ");
+                }
+                
             }while (!success);
             System.out.print("Apakah anda ingin mengulang permainan (Y/y)?");
             menu = sc27.nextLine().charAt(0);
