@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class TugasIndividu1_27 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc27 = new Scanner(System.in);
 
         // Input nilai N
         System.out.print("Masukkan nilai N: ");
-        int N = sc.nextInt();
+        int N = sc27.nextInt();
 
         // Validasi nilai N
         if (N < 3) {
