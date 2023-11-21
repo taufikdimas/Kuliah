@@ -6,22 +6,22 @@ public class Kubus27 {
         Scanner sc27 = new Scanner(System.in);
 
         System.out.print("Masukkan panjang sisi kubus: ");
-        double sisi = sc27.nextDouble();
+        int s = sc27.nextInt();// s = sisi
 
-        double volume = VolumeKubus(sisi);
-        double luasPermukaan = LuasPermukaanKubus(sisi);
+        int volume = VolumeKubus(s);
+        int luasPermukaan = LuasPermukaanKubus(s);
 
         System.out.println("Volume kubus        : " + volume);
         System.out.println("Luas permukaan kubus: " + luasPermukaan);
     }
 
     // Fungsi untuk menghitung volume kubus
-    public static double VolumeKubus(double sisi) {
-        return Math.pow(sisi, 3);
+    public static int VolumeKubus(int s) {
+        return s * s * s;
     }
 
     // Fungsi untuk menghitung luas permukaan kubus
-    public static double LuasPermukaanKubus(double sisi) {
-        return 6 * Math.pow(sisi, 2);
+    public static int LuasPermukaanKubus(int s) {
+        return 6 * s * s;
     }
 }
