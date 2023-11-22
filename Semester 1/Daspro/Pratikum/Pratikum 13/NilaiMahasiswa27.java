@@ -68,7 +68,7 @@ public class NilaiMahasiswa27 {
     public static void cariNilaiTertinggi() {
         double nilaiTertinggi = nilaiMahasiswa[0][0];
 
-        for (int j = 1; j < jumlahTugas; j++) {
+        for (int j = 0; j < jumlahTugas; j++) {
             double nilaiMinggu = 0;
             for (int i = 0; i < jumlahMahasiswa; i++) {
                 nilaiMinggu += nilaiMahasiswa[i][j];
