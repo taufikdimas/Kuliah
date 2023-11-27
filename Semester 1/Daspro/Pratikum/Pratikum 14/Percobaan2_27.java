@@ -10,7 +10,13 @@ public class Percobaan2_27 {
         System.out.print("Pangkat : ");
         pangkat = sc27.nextInt();
 
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        int hasil = hitungPangkat(bilangan, pangkat);
+
+        System.out.print(bilangan);// mencetak deret perhitungan pangkatnya
+        for (int i = 1; i < pangkat; i++) {
+            System.out.print(" x " + bilangan);
+        }
+        System.out.print(" = " + hasil);
     }
 
     static int hitungPangkat(int x, int y) {
